@@ -1,0 +1,282 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+p {
+    display: flex;
+    justify-content: center;
+    color: #e5e5e5;
+}
+
+#grid-container {
+    text-align: center;
+    align-items: center;
+    display: grid;
+    /* grid-template-columns: repeat(auto-fit, minmax(25px, 1fr)); */
+    grid-template-columns: auto auto auto auto auto auto auto;
+    grid-gap: 20px;
+    align-content: center;
+    margin-left: 5vh;
+    margin-top: 15vh;
+}
+
+.grid-child-1 {
+    background-color: #c0c0c0bb;
+    border-radius: 10px;
+    border: brown 1px solid;
+    align-content: center;
+    width: 20vh;
+}
+
+.grid-child-2 {
+    background-color: #c0c0c0bb;
+    border-radius: 10px;
+    border: brown 1px solid;
+    align-content: center;
+    width: 20.5vh;
+}
+
+.grid-child-3 {
+    background-color: #c0c0c0bb;
+    border-radius: 10px;
+    border: brown 1px solid;
+    align-content: center;
+    width: 20vh;
+}
+
+.grid-child-4 {
+    background-color: #c0c0c0bb;
+    border-radius: 10px;
+    border: brown 1px solid;
+    align-content: center;
+    width: 20vh;
+}
+
+.grid-child-5 {
+    background-color: #c0c0c0bb;
+    border-radius: 10px;
+    border: brown 1px solid;
+    align-content: center;
+    width: 20vh;
+}
+
+.grid-child-6 {
+    background-color: #c0c0c0bb;
+    border-radius: 10px;
+    border: brown 1px solid;
+    align-content: center;
+    width: 20vh;
+}
+
+.grid-child-7 {
+    background-color: #c0c0c0bb;
+    border-radius: 10px;
+    border: brown 1px solid;
+    align-content: center;
+    width: 20vh;
+}
+
+#weather_desc0 {
+    font-size: 10pt;
+}
+
+#weather_desc1 {
+    font-size: 10pt;
+}
+
+#weather_desc2 {
+    font-size: 10pt;
+}
+
+#weather_desc3 {
+    font-size: 10pt;
+}
+
+#weather_desc4 {
+    font-size: 10pt;
+}
+
+#weather_desc5 {
+    font-size: 10pt;
+}
+
+#weather_desc6 {
+    font-size: 10pt;
+}
+
+:root {
+    --white: #ffffff;
+    --off-white: #e5e5e5;
+    --transp-white-1: rgba(255, 255, 255, 0.25);
+    --transp-white-2: rgba(255, 255, 255, 0.1);
+    --blue-1: #62b8f5;
+    --blue-2: #4475ef;
+    --shadow: rgba(3, 46, 87, 0.2);
+}
+
+body {
+    background-image: url("stratocumulus-from-above-1.jpg");
+    height: 100vh;
+    background-size: 120%;
+    overflow: hidden;
+}
+
+.wrapper {
+    font-size: 16px;
+    width: 90vw;
+    max-width: 28em;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+}
+
+.container {
+    width: 100%;
+    background: var(--transp-white-2);
+    backdrop-filter: blur(10px);
+    padding: 3em 1.8em;
+    border: 2px solid var(--transp-white-2);
+    border-radius: 0.6em;
+    box-shadow: 0 1.8em 3.7em var(--shadow);
+    text-align: center;
+}
+
+.shape {
+    position: absolute;
+    background-color: var(--transp-white-1);
+    backdrop-filter: blur(1.2em);
+    border: 2px solid var(--transp-white-2);
+    border-radius: 50%;
+}
+
+.shape-1 {
+    height: 13em;
+    width: 13em;
+    right: -6.5em;
+    top: 1.8em;
+}
+
+.shape-2 {
+    height: 11em;
+    width: 11em;
+    bottom: -3.7em;
+    left: -2.5em;
+}
+
+.search-container {
+    font-size: 1em;
+    gap: 1.25em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5vh;
+}
+
+.search-container input,
+.search-container button {
+    outline: none;
+    font-size: 1em;
+    border: none;
+}
+
+.search-container input {
+    padding: 0.7em;
+    background-color: transparent;
+    border-bottom: 2px solid var(--transp-white-1);
+    color: var(--white);
+    font-weight: 300;
+    width: 3in;
+}
+
+.search-container input::placeholder {
+    color: var(--off-white);
+}
+
+.search-container input:focus {
+    border-color: var(--white);
+}
+
+.search-container button {
+    color: var(--blue-2);
+    background-color: var(--white);
+    border-radius: 0.3em;
+    height: min-content;
+    width: 85px;
+}
+
+#result h2 {
+    color: var(--white);
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    font-weight: 600;
+    margin: 0;
+}
+
+.weather,
+.desc {
+    color: var(--off-white);
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    font-size: 0.9em;
+    font-weight: 500;
+    line-height: 2em;
+}
+
+.weather {
+    margin-top: -0.7em;
+}
+
+#result img {
+    margin: 0.6em 0 0 0;
+    width: 6.2em;
+    filter: drop-shadow(0 1.8em 3.7em var(--shadow));
+}
+
+#result h1 {
+    font-size: 4em;
+    margin: 0.3em 0 0.7em 0;
+    line-height: 0;
+    font-weight: 400;
+    color: var(--white);
+}
+
+.temp-container {
+    display: flex;
+    justify-content: center;
+}
+
+.temp-container div {
+    padding: 0.3em 1em;
+}
+
+.temp-container div:first-child {
+    border-right: 1px solid var(--transp-white-1);
+}
+
+.temp-container .title {
+    font-weight: 600;
+    color: var(--white);
+}
+
+.temp-container .temp {
+    font-weight: 300;
+    color: var(--off-white);
+}
+
+.msg {
+    margin-top: 1.8em;
+    color: var(--white);
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+@media screen and (max-width: 450px) {
+    .wrapper {
+        font-size: 14px;
+    }
+}
